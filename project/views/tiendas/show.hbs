@@ -1,0 +1,36 @@
+<main>
+    <div class="w-100 h-100 d-flex justify-content-center align-items-center">
+        <div class="show shadow pt-0 pb-3">
+            <h2 class="text-center text-white px-3 py-2 baner mb-4">Detalles de la tienda</h2>
+            <div class="px-3">
+                <div class="baner text-white py-1 px-1 h5 ">General</div>
+                <div class="px-2 mb-3">
+                    <div class="d-flex justify-content-between">
+                        <p class="color h6 font-weight-normal">Nombre</p>
+                        <p class="color h6">{{ tienda.nombre }}</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="color h6 font-weight-normal">Administrador</p>
+                        <p class="color h6">{{ tienda.adm_tienda }}</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="color h6 font-weight-normal">Dirección</p>
+                        <p class="color h6">S/. {{ tienda.direccion }}</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="color h6 font-weight-normal">Número de contacto</p>
+                        <p class="color h6">{{ tienda.numero }}</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="color h6 font-weight-normal">Email</p>
+                        <p class="color h6">{{ tienda.email }}</p>
+                    </div>
+                    <div class="">
+                        <p class="color h6 font-weight-normal">Descripción</p>
+                        <p class="color h6">{{ tienda.descripcion }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

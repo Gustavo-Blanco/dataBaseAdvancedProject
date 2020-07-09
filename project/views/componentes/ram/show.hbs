@@ -1,0 +1,43 @@
+<main>
+    <div class="w-100 h-100 d-flex justify-content-center align-items-center">
+        <div class="show shadow pt-0 pb-3">
+            <h2 class="text-center text-white px-3 py-2 baner mb-4">Detalles del procesador</h2>
+            <div class="px-3">
+                <div class="baner text-white py-1 px-1 h5 ">General</div>
+                <div class="px-2 mb-3">
+                    <div class="d-flex justify-content-between">
+                        <p class="color h6 font-weight-normal">Nombre</p>
+                        <p class="color h6">{{ componente.nombre }}</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="color h6 font-weight-normal">Marca</p>
+                        <p class="color h6">{{ componente.marca }}</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="color h6 font-weight-normal">Precio</p>
+                        <p class="color h6">S/. {{ componente.precio }}</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="color h6 font-weight-normal">Stock</p>
+                        <p class="color h6">{{ componente.stock }}</p>
+                    </div>
+                </div>
+                <div class="baner text-white py-1 px-1 h5 ">Detalles</div>
+                <div class="px-2">
+                    <div class="d-flex justify-content-between">
+                        <p class="color h6 font-weight-normal">Modelo</p>
+                        <p class="color h6">{{ componente.detalle.modelo }}</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="color h6 font-weight-normal">Capacidad</p>
+                        <p class="color h6">{{ componente.detalle.capacidad }}GB</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="color h6 font-weight-normal">Frecuencia</p>
+                        <p class="color h6">{{ componente.detalle.frecuencia }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

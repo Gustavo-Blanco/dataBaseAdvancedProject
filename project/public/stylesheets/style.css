@@ -1,0 +1,79 @@
+header {
+  z-index: 2;
+}
+
+nav {
+  height: 80px;
+}
+
+.show {
+  width: 500px;
+  /*background: rgb(235, 240, 241);*/
+}
+
+table th a:hover {
+  text-decoration: none;
+}
+
+.categoria-componente {
+  width: 450px;
+  height: 280px;
+}
+
+.categoria-componente img {
+  transition: .4s;
+}
+
+.categoria-componente:hover img {
+  transform: scale(1.1);
+  transition: .4s;
+}
+
+.categoria-componente p {
+  height: 100%;
+}
+
+.procesador-fondo {
+  background: rgba(6, 49, 98, 0.479);
+}
+
+.memoria-fondo {
+  background: rgba(6, 84, 98, 0.479);
+}
+.tarjeta-fondo{
+  background: rgba(6, 98, 41, 0.479);
+}
+.placa-fondo{
+  background: rgba(2, 46, 15, 0.479);
+}
+.disco-fondo{
+  background: rgba(17, 3, 95, 0.479);
+}
+.fuente-fondo{
+  background: rgba(5, 25, 44, 0.568);
+}
+
+.pc-fondo{
+  background: rgba(28, 37, 51, 0.411);
+}
+.laptop-fondo{
+  background: rgba(83, 40, 5, 0.486);
+}
+.celular-fondo{
+  background: rgba(11, 119, 113, 0.486);
+}
+main form{
+  background: rgb(235, 240, 241);
+  width: 700px;
+}
+.boton{
+  background: rgb(12, 201, 187);
+  border: none;
+  border-radius: 8px;
+}
+.baner{
+  background: rgb(12, 201, 187);
+}
+.color{
+  color: #999;
+}

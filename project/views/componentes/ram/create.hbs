@@ -1,0 +1,55 @@
+<main>
+    <div class="w-100 h-100 d-flex justify-content-center align-items-center">
+        <form method="POST" action="/componentes/ram/save" class="pt-3 pb-4">
+            <h2 class="text-left font-weight-normal px-4">Registrar memoria ram</h2>
+            <hr>
+            <div class="mx-4">
+                <form>
+                    <div class="d-flex">
+                        <div class="form-group col-6 pl-0">
+                            <label>Nombre</label>
+                            <input class="form-control" type="text" name="nombre">
+                        </div>
+                        <div class="form-group col-6 pr-0">
+                            <label>Marca</label>
+                            <input class="form-control" type="text" name="marca">
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="form-group col-6 pl-0">
+                            <label>Precio</label>
+                            <input class="form-control" type="text" name="precio" pattern="^[0-9]+">
+                        </div>
+                        <div class="form-group col-6 pr-0">
+                            <label>Stock</label>
+                            <input class="form-control" type="text" name="stock" pattern="^[0-9]+">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="hidden" name="categoria" value="ram">
+                    </div>
+                    <div class="form-group h4 font-weight-normal mb-2">
+                        Detalles
+                    </div>
+                    <hr class="mt-0">
+                    <div class="d-flex">
+                        <div class="form-group col-4 px-0 pr-2">
+                            <label>Modelo</label>
+                            <input class="form-control" type="text" name="detalle.modelo">
+                        </div>
+                        <div class="form-group col-4 px-0 pr-2">
+                            <label>Capacidad</label>
+                            <input class="form-control" type="text" name="detalle.capacidad" pattern="^[0-9]+">
+                        </div>
+                        <div class="form-group col-4 px-0">
+                            <label>Frecuencia</label>
+                            <input class="form-control" type="number" name="detalle.frecuencia" step="any">
+                        </div>
+                    </div>
+                    <button type="submit" class="boton py-2 px-4 text-white">Agregar</button>
+                </form>
+            </div>
+
+        </form>
+    </div>
+</main>

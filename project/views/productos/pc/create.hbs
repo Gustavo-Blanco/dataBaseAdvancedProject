@@ -1,0 +1,65 @@
+<main>
+    <div class="w-100 h-100 d-flex justify-content-center align-items-center">
+        <form method="POST" action="/productos/pc/save" class="pt-3 pb-4">
+            <h2 class="text-left font-weight-normal px-4">Registrar Pc</h2>
+            <hr>
+            <div class="mx-4">
+
+                <div class="d-flex">
+                    <div class="form-group col-6 pl-0">
+                        <label>Nombre</label>
+                        <input class="form-control" type="text" name="nombre">
+                    </div>
+                    <div class="form-group col-6 pr-0">
+                        <label>Marca</label>
+                        <input class="form-control" type="text" name="marca">
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="form-group col-6 pl-0">
+                        <label>Precio</label>
+                        <input class="form-control" type="text" name="precio" pattern="^[0-9]+">
+                    </div>
+                    <div class="form-group col-6 pr-0">
+                        <label>Stock</label>
+                        <input class="form-control" type="text" name="stock" pattern="^[0-9]+">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="hidden" name="categoria" value="pc">
+                </div>
+                <div class="form-group h4 font-weight-normal mb-2">
+                    Detalles
+                </div>
+                <hr class="mt-0">
+                <div class="px-0">
+                    <div class="d-flex">
+                        <div class="form-group col-4 px-0 pr-2">
+                            <label>Procesador</label>
+                            <input class="form-control" type="text" name="detalle.procesador">
+                        </div>
+                        <div class="form-group col-4 px-0 pr-2">
+                            <label>Ram</label>
+                            <input class="form-control" type="number" name="detalle.ram" pattern="^[0-9]+">
+                        </div>
+                        <div class="form-group col-4 px-0">
+                            <label>Placa Madre</label>
+                            <input class="form-control" type="text" name="detalle.placa">
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="form-group col-4 px-0 pr-2">
+                            <label>Fuente de poder</label>
+                            <input class="form-control" type="text" name="detalle.fuente">
+                        </div>
+                        <div class="form-group col-4 px-0 pr-2">
+                            <label>Tarjeta de video</label>
+                            <input class="form-control" type="text" name="detalle.video">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="boton py-2 px-4 text-white">Agregar</button>
+            </div>
+        </form>
+    </div>
+</main>

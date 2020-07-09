@@ -1,0 +1,39 @@
+<table class="table container">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col" class="px-2 h5" >Nombre</th>
+            <th scope="col" class="px-2 h5" >Administrador</th>
+            <th scope="col" class="px-2 h5" >Dirección</th>
+            <th scope="col" class="px-2 h5" >Número</th>
+            <th scope="col" class="px-2 h5" >Email</th>
+            <th class="text-center h2 pt-1 pb-1 border border-dark" colspan="2">
+                <a href="/tiendas/create" class="text-white">
+                    <i class="fas fa-plus-circle d-flex justify-content-center align-items-center text-decoration-none"></i>
+                </a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#if tiendas}}
+            {{#each tiendas}}
+                <tr>
+                    <td class="pb-0 border"><a href="/tiendas/show/{{ _id }}">{{nombre}}</a></td>
+                    <td class="pb-0 border">{{adm_tienda}}</td>
+                    <td class="pb-0 border">{{direccion}}</td>
+                    <td class="pb-0 border">{{numero}}</td>
+                    <td class="pb-0 border">{{email}}</td>
+                    <td class="py-1 border text-center">
+                        <a href="/tiendas/edit/{{ _id }}" class="btn btn-warning">Editar</a>
+                    </td>
+                    <td class="py-1 border text-center">
+                        <form action="/tiendas/delete/{{ _id }}" method="post">
+                            <button type="submit" class="btn btn-danger ml-1">Eliminar</button>
+                        </form>
+                    </td>
+                </tr>
+            {{/each}}
+        {{~^~}}
+        <td>No existen tiendas</td>
+        {{/if}}
+    </tbody>
+</table>

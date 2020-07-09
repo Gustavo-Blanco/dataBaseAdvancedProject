@@ -1,0 +1,39 @@
+<table class="table container">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col" class="px-2 h5">Nombre</th>
+            <th scope="col" class="px-2 h5">Marca</th>
+            <th scope="col" class="px-2 h5">Precio</th>
+            <th scope="col" class="px-2 h5">Stock</th>
+            <th scope="col" class="px-2 h5">Categoria</th>
+            <th class="text-center h2 pt-1 pb-1 border border-dark" colspan="2">
+                <a href="/componentes/categorias" class="text-white">
+                    <i class="fas fa-plus-circle d-flex justify-content-center align-items-center"></i>
+                </a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#if componentes}}
+            {{#each componentes}}
+                <tr>
+                    <td class="pb-0 border"><a href="/componentes/{{categoria}}/show/{{_id}}">{{nombre}}</a></td>
+                    <td class="pb-0 border">{{marca}}</td>
+                    <td class="pb-0 border">{{precio}}</td>
+                    <td class="pb-0 border">{{stock}}</td>
+                    <td class="pb-0 border">{{categoria}}</td>
+                    <td class="py-1 border text-center">
+                        <a href="/componentes/{{categoria}}/edit/{{_id}}" class="btn btn-warning">Editar</a>
+                    </td>
+                    <td class="py-1 border text-center">
+                        <form action="/componentes/delete/{{_id}}" method="post">
+                            <button type="submit" class="btn btn-danger ml-1">Eliminar</button>
+                        </form>
+                    </td>
+                </tr>
+            {{/each}}
+        {{~^~}}
+            <h1>No existen componentes</h1>
+        {{/if}}
+    </tbody>
+</table>
